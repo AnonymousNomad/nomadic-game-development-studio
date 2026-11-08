@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Alaska Offshore — Nomadic Game Studio graphics lab</title>
+<link rel="stylesheet" href="./style.css"/>
+</head><body>
+<div id="viewport" aria-label="Interactive three-dimensional ocean and fishing boat scene"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="hud top">
+ <div class="ident"><span class="eyebrow">NOMADIC LABS · VISUAL DEVELOPMENT LAB 01</span><strong>ALASKA <span>OFFSHORE</span></strong><span class="sub">COLD WATER / WORKING VESSEL</span></div>
+ <div class="state"><span class="led"></span>LOCAL 3D SCENE <span id="fps">— FPS</span></div>
+</div>
+<div class="moonhint">57° N &nbsp; / &nbsp; COASTAL WATERS</div>
+<section class="controls" aria-label="Scene controls">
+ <div class="control-heading"><span class="eyebrow">SCENE CONTROLS</span><button id="hide-ui" title="Toggle controls">−</button></div>
+ <div id="control-body">
+ <div class="control"><label for="wave">SEA STATE <output id="wave-n">3</output></label><input id="wave" type="range" min="1" max="5" step="1" value="3"></div>
+ <div class="control"><label for="exposure">MOONLIGHT <output id="exposure-n">65%</output></label><input id="exposure" type="range" min="30" max="145" step="5" value="65"></div>
+ <div class="control"><label for="boat-weight">VESSEL INERTIA <output id="boat-weight-n">HEAVY</output></label><input id="boat-weight" type="range" min="1" max="5" step="1" value="4"></div>
+ <div class="button-row"><button class="mode active" id="camera-chase">CHASE VIEW</button><button class="mode" id="camera-orbit">ORBIT</button><button class="mode" id="camera-bridge">BRIDGE</button></div>
+ <div class="button-row"><button class="mode" id="toggle-weather">CLEARER SKY</button><button class="mode" id="toggle-freeze">PAUSE</button><button class="mode" id="capture">CAPTURE FRAME</button></div>
+ <div class="button-row"><button class="mode" id="record">RECORD 12s CINEMATIC TOUR</button></div>
+ <div class="readout"><span>BOAT</span><b>23 M STEEL WORKBOAT</b></div>
+ <div class="readout"><span>RENDER</span><b id="renderer">INITIALIZING…</b></div>
+ <p class="help">Drag to look around · Scroll to zoom · Use buttons to change camera. Local prototype, no external assets or services.</p>
+ </div>
+</section>
+<div class="foot"><span>NGDS / REAL-TIME MATERIAL & WATER TEST</span><span id="time-label">SCENE 001 · NIGHT APPROACH</span></div>
+<div class="loading" id="loading">PREPARING THE WATER <span>…</span></div>
+<div id="error" role="alert" hidden></div>
+<script src="../world-studio/three.min.js"></script>
+<script src="./shaders.js"></script>
+<script src="./app.js"></script>
+</body></html>

@@ -16,8 +16,10 @@ NGDS is **not currently an integrated game-development application or a replacem
 | [Universal Core](studio/universal-core.mjs) | Engine-neutral project, adapter, operation and evidence contracts; 21 negative/positive tests passed | Trusted external authority, actual native engine adapters and source transactions |
 | [World Presence](studio/presence-core.mjs) | Isolated fixture camera inspection, bounded steering, screenshot binding and undo; 14 tests passed | Native cross-engine camera/player control and trusted capture provenance |
 | [Vision Triage](studio/vision/minimax-review-contract.mjs) | Frame/revision-bound structured defect reports and refusal checks; 17 tests passed | Direct trusted integration into agent sessions and independent art review |
+| [Alaska Offshore Boat Lab](modules/alaska-boat-lab/) | Independent local fishing-vessel/ocean scene, manual camera, weather and vessel-motion controls, real Edge/GTX 1060 capture; 5 source/HTTP tests pass | Fine-art reference acceptance, professionally validated buoyancy, agent-guided source repair |
+| [Visual Quality Gate](studio/quality/) | Source-bound PNG evidence, matched scene-time/camera check, 17 tests including optional real capture integration | Independent art-quality judgment and signed GPU capture provenance |
 
-**Repository regression baseline:** 95 tests passed, zero failed, one optional dependency test skipped, under controlled resource admission on November 8, 2026. These are chiefly contract, source, and isolated HTTP-fixture tests—not a production installation or a claim of photorealistic visual quality.
+**Current source/fixture regression:** 116 tests passed, zero failed, two optional checks skipped in a resource-admitted Windows run on November 8, 2026. A separate real PNG integration run passed 17/17 quality tests. The native-GPU boat capture and recorded MP4 smoke were exercised independently. These are not production installation or photorealistic visual-quality acceptance claims.
 
 ### Isolated in-world vision pilot
 
@@ -26,6 +28,10 @@ A subsequent experimental run used a disposable LiveWorld Forge scene and a Mini
 An independent review recalculated all five stored PNG hashes and three bounding-box IoUs (0.9449 / 0.9691 / 0.9486). **However**, the original provider/model invocation was not independently replayed, compositor evidence is not cryptographically signed by a trusted capture worker, and the fixture is not a production game. **No graphics-quality improvement or development-throughput gain has yet been measured.**
 
 See the [P1 evidence review](docs/NGDS_VISION_P1_INDEPENDENT_REVIEW_20261108.md) for established facts, provenance issues and open gates.
+
+### Standalone workboat graphics benchmark
+
+The [Alaska Offshore Boat Lab](modules/alaska-boat-lab/) is a separate procedural Three.js workboat and moonlit ocean scene. It includes a wheelhouse, gear, nets, adjustable ocean/lighting, a browser-based walkthrough and experimental short video recording. The [Visual Quality Gate](studio/quality/) binds renderer captures to camera/time/source metadata and reports precise pixel changes **without claiming changed pixels equal better art**. Both are new experimental implementations, not capabilities automatically deployed into private games. See the [independent fixture receipt](studio/quality/ALASKA_OFFSHORE_QUALITY_GATE_RECEIPT_20261108.md).
 
 ## Architecture
 

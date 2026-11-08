@@ -1,0 +1,49 @@
+{
+  "schema": "ngds.visual-benchmark/1",
+  "id": "alaska-offshore-workboat",
+  "source": "original procedural code; references are user-provided images, not included in package",
+  "engine": "threejs",
+  "objective": "Cinematic small commercial shrimp/workboat offshore at night, convincing mass, turbulent ocean, moonlit cloud break, dark rugged Alaska coastline, playable camera",
+  "scope": [
+    "boat-hull",
+    "wheelhouse",
+    "work-deck",
+    "mast-gear",
+    "rigging",
+    "ocean",
+    "clouds",
+    "coast",
+    "wave-motion",
+    "lighting",
+    "orbit-camera"
+  ],
+  "nonGoals": [
+    "full vessel navigation",
+    "commercial fishing simulation",
+    "AI model integration",
+    "physics certification",
+    "STILLWATER integration"
+  ],
+  "hardware": {
+    "target": "GTX1060 6GB / 16GB RAM",
+    "targetFps": 30,
+    "level": "visual benchmark; measure before asserting performance"
+  },
+  "acceptance": {
+    "art": [
+      "Commercial vessel silhouette and construction",
+      "Wet metal and practical lights readable at night",
+      "Moon reflections and visibly varied ocean surface",
+      "Boat appears heavy, no toy-like oscillation",
+      "Coastline reads as a distant rugged silhouette"
+    ],
+    "integration": [
+      "local offline startup",
+      "all UI controls work",
+      "isolated from production game repos",
+      "readable scene telemetry",
+      "reproducible camera and source revisions"
+    ]
+  },
+  "status": "prototype; native GPU visual acceptance pending"
+}

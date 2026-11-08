@@ -1,0 +1,14 @@
+{
+  "name": "ngds-alaska-offshore-boat-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated no-dependency cinematic ocean and workboat benchmark for NGDS visual QA",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

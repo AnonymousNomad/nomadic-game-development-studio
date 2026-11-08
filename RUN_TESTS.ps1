@@ -13,4 +13,8 @@ Push-Location (Join-Path $root 'studio')
 try { & node --test tests/presence.test.mjs; if($LASTEXITCODE -ne 0){throw 'Presence fixture tests failed'} } finally { Pop-Location }
 Push-Location (Join-Path $root 'studio/vision')
 try { & node --test minimax-review-contract.test.mjs; if($LASTEXITCODE -ne 0){throw 'MiniMax vision triage contract tests failed'} } finally { Pop-Location }
-Write-Host 'Source and fixture tests complete. No native GPU, actual MiniMax vision call or engine integration claims.'
+Push-Location (Join-Path $root 'studio/quality')
+try { & node --test visual-gate.test.mjs compare-frames.test.mjs; if($LASTEXITCODE -ne 0){throw 'Visual quality gate tests failed'} } finally { Pop-Location }
+Push-Location (Join-Path $root 'modules/alaska-boat-lab')
+try { & node --check app.js; if($LASTEXITCODE -ne 0){throw 'Boat Lab source syntax failed'}; & node --test tests/boat-lab.test.mjs; if($LASTEXITCODE -ne 0){throw 'Alaska Offshore Boat Lab tests failed'} } finally { Pop-Location }
+Write-Host 'Source/fixture tests complete. No native GPU attestation, model visual acceptance or cross-engine production qualification claims.'

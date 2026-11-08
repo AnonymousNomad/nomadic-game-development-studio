@@ -7,16 +7,16 @@
       "sha256": "5033970d5dcfa98cd5769c2196b7c0baa34a2f93a603d82807f9776903dfc384"
     },
     "README.md": {
-      "bytes": 9678,
-      "sha256": "f5e3334748639ffab5f3aa4254409c1e12e035b42be45eec024f04f5c3636964"
+      "bytes": 10988,
+      "sha256": "ff100084a6a7f35531c3f4f7ae0a39d1b18441d7c83806ae309502dcb6bbb3f8"
     },
     "RIGHTS_AND_PROVENANCE.md": {
       "bytes": 1294,
       "sha256": "d0260c1b97e8769fa30d030b0cee8391cb24c3d8fee8d45bb3497fb44307db58"
     },
     "RUN_TESTS.ps1": {
-      "bytes": 1431,
-      "sha256": "c90f5b0d799d92c06ca592a15e3595e1c41b139ec8d7277d14ed542f69b4cf9d"
+      "bytes": 1951,
+      "sha256": "a2dfdfdc664dee0d22791db6dcf20c60bfd527dc5c1b25ccefe1e4e4042d62d5"
     },
     "SECURITY.md": {
       "bytes": 564,
@@ -73,6 +73,50 @@
     "docs/WORLD_PRESENCE_P0_TEST_RECEIPT_20261108.md": {
       "bytes": 2949,
       "sha256": "acf2446c05f16031a78136e0c36f0335cbcc3f1850794b0bc421b63bad1c7cf9"
+    },
+    "modules/alaska-boat-lab/README.md": {
+      "bytes": 4031,
+      "sha256": "4098a2b0534637fc68806f6afadc5feb41e93956241c6c5eefa15153065d86dc"
+    },
+    "modules/alaska-boat-lab/START_BOAT_LAB.cmd": {
+      "bytes": 718,
+      "sha256": "b57497a070a7aefc3a0a012b5138696252507a69d69ead0224c1e1ae76351c13"
+    },
+    "modules/alaska-boat-lab/app.js": {
+      "bytes": 21806,
+      "sha256": "04ab2a8025eff49a2150c44ce95fcfc1cce068e14896120c35e64d2432f4d93d"
+    },
+    "modules/alaska-boat-lab/index.html": {
+      "bytes": 2745,
+      "sha256": "efe546ff47af16d2371083cd9311eef2587b300ebbaebd78b827d13bc467627f"
+    },
+    "modules/alaska-boat-lab/package.json": {
+      "bytes": 342,
+      "sha256": "4c0994ec38fc31e08f47aad78de52f8dfebb4a6903fefe1ea583756b773bdb63"
+    },
+    "modules/alaska-boat-lab/scene-contract.json": {
+      "bytes": 1508,
+      "sha256": "ed0a9efbeba43a2c05348c77bb45497cd83b5ef54f80611259572539bfc4f1f3"
+    },
+    "modules/alaska-boat-lab/server.mjs": {
+      "bytes": 2504,
+      "sha256": "776f1f72096770290011bc9b08a22389cc3ef0651cf6ab7eeccf32ff9de0122b"
+    },
+    "modules/alaska-boat-lab/shaders.js": {
+      "bytes": 3374,
+      "sha256": "593a7420a377b61bc8953fd36bf5f0d3c78a696d1f026514f8fb3d84abbfa671"
+    },
+    "modules/alaska-boat-lab/style.css": {
+      "bytes": 3431,
+      "sha256": "ecfa17e784c5b596893661a002a9b5af002dbf88a7bff89aea961850d46bcd67"
+    },
+    "modules/alaska-boat-lab/tests/boat-lab.test.mjs": {
+      "bytes": 3035,
+      "sha256": "e57e1ee6fb511ece49857cc589190ae6a6ffe12d59e59991e8b55ac3b4c13c76"
+    },
+    "modules/alaska-boat-lab/verify-gpu.mjs": {
+      "bytes": 9986,
+      "sha256": "ddb4e04b949d61e53c5dace9b9e492f2df5c2ebaf75f31b4a778408a33a82e74"
     },
     "modules/liveworld-forge/.gitignore": {
       "bytes": 56,
@@ -301,6 +345,30 @@
     "studio/presence-core.mjs": {
       "bytes": 6713,
       "sha256": "88f3e1bb46e067ef3bfbb30c4c70b1ab072070165085d97e4c3198634abe4e80"
+    },
+    "studio/quality/ALASKA_OFFSHORE_QUALITY_GATE_RECEIPT_20261108.md": {
+      "bytes": 3389,
+      "sha256": "9810c3761e179259248051f42f932d2b15f157894667b86b4fbcde23c67723fa"
+    },
+    "studio/quality/README.md": {
+      "bytes": 1911,
+      "sha256": "ab5f6a5bee2dddfd054e0c82fd1d843952d77d4ab20c08b9b800300ecb232f1b"
+    },
+    "studio/quality/compare-frames.mjs": {
+      "bytes": 1102,
+      "sha256": "7717b88fb81e370bac841b56db006d2e35a4801acd9fe1917285e9b4ac4f2f91"
+    },
+    "studio/quality/compare-frames.test.mjs": {
+      "bytes": 2300,
+      "sha256": "375fc90c44f9d53bde2cc4b87028036f3514897f2bdf3e7bfc1f3393ee16710e"
+    },
+    "studio/quality/visual-gate.mjs": {
+      "bytes": 7762,
+      "sha256": "eea25bafa4ec3f381bc3a14f3a62f3c2c252550240827d1f2337bbf6bce61aef"
+    },
+    "studio/quality/visual-gate.test.mjs": {
+      "bytes": 6038,
+      "sha256": "fa1dacf568859df6c3c75a6949ce63cd4a37ceda964d94258e2bc398bd466ed9"
     },
     "studio/research-catalog.json": {
       "bytes": 3269,
