@@ -1,6 +1,6 @@
 # Rights and provenance
 
-This repository is published by Nomadic Labs as **an experimental, publicly visible source preview**. It was created primarily for the owner and friends Barry and Cody to test.
+This repository is published by Nomadic Labs as **an experimental, publicly visible source preview**. The repository is intended for technical evaluation of experimental local-first scene-authoring and agent-verification components.
 
 **Public visibility is not the same as licensing.** Unless a particular source module contains its own license, original World Studio and LiveWorld Forge code remains copyright (c) 2026 Nomadic Labs and its contributors. No general permission for commercial redistribution, sublicensing or repackaging is granted. The owner may choose an open-source or other license separately.
 

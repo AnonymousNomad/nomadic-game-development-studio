@@ -2,7 +2,7 @@
 
 Research date: 2026-11-08. This is a PROPOSED extension, not a verified integration.
 
-Cody's Google Flow example aligns with Google Flow's official "Ingredients to Video" and reusable Characters: retain a clean reference of a character, then include the same reference alongside a scene/environment reference and text action prompt in each generation. Official Flow Help recommends plain or segmented-background references. Google says Flow can also reference a named character by @name or the owner's @me avatar.
+Google Flow is one example of a provider-specific reference workflow. Its documented "Ingredients to Video" functionality can combine a character reference, environment reference, and text action prompt across generations. Provider guidance recommends clean reference images and documents named-character options. These features are background research only; NGDS has no operational Google Flow adapter.
 
 Sources:
 - https://support.google.com/flow/answer/16353334

@@ -91,7 +91,7 @@ Official editor automation references: [Unreal Editor Python](https://dev.epicga
 - **P2:** implement read-only Godot and Unity bridges separately. Then exact one-object approved write with native undo and a clean reference project. User's current game projects remain untouched.
 - **P3:** Unreal native Editor read-only feasibility on authorized workstation; hardware and license resources first; no UE launch on busy hardware.
 - **P4:** interchangeable asset-compiler/generator pipelines, material/rig animation probes, glTF/LOD/KTX2, real-world terrains, approved licensing.
-- **P5:** GUI + project discovery + agent session experience + source and evidence history, then independent install tests on Barry/Cody machines.
+- **P5:** GUI + project discovery + agent session experience + source and evidence history, then independent installation tests on clean external development machines.
 
 ## Engineering gates before broad marketing
 

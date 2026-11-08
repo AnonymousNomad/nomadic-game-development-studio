@@ -7,12 +7,12 @@
       "sha256": "5033970d5dcfa98cd5769c2196b7c0baa34a2f93a603d82807f9776903dfc384"
     },
     "README.md": {
-      "bytes": 5835,
-      "sha256": "25565111701167711f0b3a74a2728c9e6189fe69cdab9369d5a469c6cbd708f1"
+      "bytes": 9678,
+      "sha256": "f5e3334748639ffab5f3aa4254409c1e12e035b42be45eec024f04f5c3636964"
     },
     "RIGHTS_AND_PROVENANCE.md": {
-      "bytes": 1238,
-      "sha256": "cc008491dc7d241fa150d35b6a206c33586d5a23372c2093d6602f564e0e8aca"
+      "bytes": 1294,
+      "sha256": "d0260c1b97e8769fa30d030b0cee8391cb24c3d8fee8d45bb3497fb44307db58"
     },
     "RUN_TESTS.ps1": {
       "bytes": 1431,
@@ -63,12 +63,12 @@
       "sha256": "ecf53aa9e7f9fea59f43aae9b2f997ef1a85f854a097be0bf2928e93f2bcccfe"
     },
     "docs/UNIVERSAL_STUDIO_ARCHITECTURE.md": {
-      "bytes": 10232,
-      "sha256": "83dc6486c17b03dbab90641ad15c5b8645f1ed642369f4365f6e77ae5bc08dd3"
+      "bytes": 10253,
+      "sha256": "930a9a9d2e5805635e133d4e72e54da415ed09efcb793b5dccf9fd6ecf55c78f"
     },
     "docs/VERIFICATION_AND_RELEASE_POLICY.md": {
-      "bytes": 3378,
-      "sha256": "f854576ab1afe42262af18590029b33c62db5ed34d96fa65274faceed21cb0fb"
+      "bytes": 3390,
+      "sha256": "e2c387a8bed3893e163a7bcb4adf56c5d1126c451392f243f51986ab7f6d7258"
     },
     "docs/WORLD_PRESENCE_P0_TEST_RECEIPT_20261108.md": {
       "bytes": 2949,
@@ -79,8 +79,8 @@
       "sha256": "564573aadf1e4a610b02f6f0a7966ef345697a176757c038c95ea25227379180"
     },
     "modules/liveworld-forge/README.md": {
-      "bytes": 4402,
-      "sha256": "f359343b51981f271185816585d65bd54e7fbf85054281d6197becc0902921d1"
+      "bytes": 4646,
+      "sha256": "42166722429f7d24382fc0e00f67a80de68a5094b7977b656a6f4b4c9084ac8d"
     },
     "modules/liveworld-forge/TEST_RECEIPT.md": {
       "bytes": 2173,
@@ -107,8 +107,8 @@
       "sha256": "f221a7b899e216f38672cdc7d2639f7729ff5cfd9646e7e00b93a607f1557426"
     },
     "modules/liveworld-forge/docs/FLOW_REFERENCE_CONTINUITY.md": {
-      "bytes": 3277,
-      "sha256": "683154b963f9964727c8d8a88cf25ebd8b41b3bb940e6a8c16c9111c9def3665"
+      "bytes": 3253,
+      "sha256": "504b2f91c98670cef107cbbec966ea4d75b88eebf332938bc3f2c40454879850"
     },
     "modules/liveworld-forge/examples/add-prop.json": {
       "bytes": 210,
@@ -143,8 +143,8 @@
       "sha256": "ba3a7f1ee3a2fa4bfd9f3e4396cf55eef416f3213c05daa19bdaf9e0a50d3891"
     },
     "modules/liveworld-forge/tests/scene-contract.test.mjs": {
-      "bytes": 5526,
-      "sha256": "392fb3eed26836f88672bc7c9c2468d17b8fe61b67f869c3a4e09d68ee6d151f"
+      "bytes": 5535,
+      "sha256": "421ecdf0652dbad0de90ac7df66b15f01af2ea7b674e0850b26d27701a46cd0a"
     },
     "modules/liveworld-forge/vendor/THREE_LICENSE.txt": {
       "bytes": 1078,

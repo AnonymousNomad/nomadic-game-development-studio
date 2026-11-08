@@ -1,6 +1,6 @@
 # Contribution and Verification Policy
 
-The Nomadic Game Development Studio is an **engine-agnostic, local-first AI development toolkit**. Every engineering improvement should be reported with its actual maturity and verified evidence before it is described as available to friends or public users.
+The Nomadic Game Development Studio is an **engine-agnostic, local-first AI development toolkit**. Every engineering improvement should be reported with its actual maturity and verified evidence before it is described as available to external developers or public users.
 
 ## Required development checkpoints
 

@@ -37,15 +37,15 @@ test('denies unauthenticated writes, malicious origin, and stale revisions',asyn
 });
 test('typed authoring, camera, protected assets, undo and monotonic revisions',async t=>{
   const x=await setup(t);
-  const add={type:'add',id:'cody-prop',kind:'sphere',position:[2,1,0],rotation:[0,0,0],scale:[2,2,2],color:'#ffbb00'};
+  const add={type:'add',id:'fixture-prop',kind:'sphere',position:[2,1,0],rotation:[0,0,0],scale:[2,2,2],color:'#ffbb00'};
   assert.equal((await x.post(add,0))[1].revision,1);
-  assert.equal((await x.post({type:'recolor',id:'cody-prop',color:'#445566'},1))[1].revision,2);
+  assert.equal((await x.post({type:'recolor',id:'fixture-prop',color:'#445566'},1))[1].revision,2);
   assert.equal((await x.post({type:'camera',position:[3,4,8],target:[1,2,0]},2))[1].revision,3);
   assert.equal((await x.post({type:'remove',id:'cabin'},3))[1].code,'PROTECTED_REFERENCE');
   assert.equal((await x.post({type:'undo'},3))[1].revision,4);
   const state=(await x.get('/api/scene'))[1];
   assert.deepEqual(state.camera.position,[8,5.5,11]);
-  assert.equal(state.objects.find(o=>o.id==='cody-prop').color,'#445566');
+  assert.equal(state.objects.find(o=>o.id==='fixture-prop').color,'#445566');
   assert.equal(state.revision,4);
 });
 test('invalid, oversized, traversal-like and fake material edits fail without changing scene',async t=>{

@@ -13,22 +13,27 @@ This is the next model-neutral layer atop our EXISTING Nomadic Scene Forge and S
 - Strict loopback bind, editor token required for changes, cross-origin write rejection, typed bounded input; no arbitrary model code or shell execution.
 - No subscriptions or external network requirements.
 
-## Start and use (Node 20+; use installed local Node v26)
-Run from C:\NomadicLabs\NomadicLiveWorldForge-Pilot on Windows:
+## Local setup and use (Node.js 20+)
 
-    $env:LWF_TOKEN = [Convert]::ToHexString([Security.Cryptography.RandomNumberGenerator]::GetBytes(32))
-    & 'C:\NomadicLabs\runtime\node-v26.4.0-win-x64\node.exe' server.mjs
+From an extracted repository, open PowerShell in the `modules/liveworld-forge` directory. Generate a fresh random editor token and start the local server:
 
-Open http://127.0.0.1:18788/ in an isolated browser tab, paste the same LWF_TOKEN into the editor password field for editing. The token is only held in the local process environment and the open page memory; it is never stored by the app.
+    $bytes = New-Object byte[] 32
+    $rng = [Security.Cryptography.RandomNumberGenerator]::Create()
+    $rng.GetBytes($bytes)
+    $rng.Dispose()
+    $env:LWF_TOKEN = ([BitConverter]::ToString($bytes)).Replace('-', '').ToLowerInvariant()
+    node server.mjs
 
-From another local PowerShell session, supply the SAME editor token from your own authorized shell/session and run:
+The default local URL is http://127.0.0.1:18788/ . Open it in a local browser and enter the token when using editor controls. Keep the server restricted to loopback; do not publish the token or port-forward the service. The application does not intentionally persist editor credentials.
+
+From a **separate** local PowerShell session (with the same token supplied through trusted local environment configuration), run these commands from `modules/liveworld-forge`:
 
     node agent-cli.mjs inspect
     node agent-cli.mjs contract
     node agent-cli.mjs edit examples/add-prop.json
     node agent-cli.mjs capture-meta
 
-An AI agent may issue exactly the same commands from its own authorized terminal. Inspect is read-only and requires no secret; mutations require LWF_TOKEN, which must be supplied via approved environment/secret storage. Do not send the secret in prompts or logs.
+Run one experimental server at a time. `inspect` and `contract` are read-only; mutations require a valid `LWF_TOKEN` and must be confined to disposable test scenes. Do not send tokens to AI prompts or include them in issue reports.
 
 ## Safety
 This is a separate directory. It never edits C:\NomadicLabs\AlaskaRetreatWeb, the active MiniMax checkout, Source Forge, Sightline checkpoint, Covert Engine or another worker's repo. Do not connect it to a production repo, native shell/Blender execution or Mod SDK without resource, authorization and security qualification. Run browser/GPU experiments under normal Resource Admission.
@@ -43,7 +48,7 @@ The lightweight Node API suite is tests/scene-contract.test.mjs; tests/browser-s
 4. Provide engine adapters for Godot and Unity without replacing their renderers.
 5. Build safe Blender typed editing plus Blender live viewport and optional AI design agent, preserving worker ownership and Resource Admission.
 6. Add provider-independent character reference identities and motion/video generation adapters (see docs/FLOW_REFERENCE_CONTINUITY.md); this is optional, not a subscription dependency.
-7. Package with redistributable third-party licenses and a safe installer after full adversarial and GPU checks for an external developer such as Cody.
+7. Package with redistributable third-party licenses and a safe installer after full adversarial and native-GPU qualification on a clean external development machine.
 
 ## Limitations
 No neural image-to-3D reconstruction, agent vision verification, physics engine, true player-in-world embodied navigation, art-director AI, multi-user collaboration, game deployment integration, custom shaders or trusted runtime screenshot attestation yet. It is a genuine local live scene editor, NOT equivalent to Google Flow, Tripo, Blender, Unity, Godot or a complete game studio.
