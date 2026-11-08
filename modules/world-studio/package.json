@@ -1,0 +1,12 @@
+{
+  "name": "nomadic-world-studio-pilot",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Isolated, reversible 3D editor loop and MCP fixture for an AI game studio",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test protocol.test.mjs server.test.mjs mcp.test.mjs"
+  },
+  "dependencies": {}
+}

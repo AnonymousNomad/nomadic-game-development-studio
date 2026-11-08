@@ -1,0 +1,14 @@
+{
+  "game_import_approved": false,
+  "geometry_kind": "deterministic_parametric_NOT_image_reconstruction",
+  "glb_bytes": 134812,
+  "glb_sha256": "54aba7a5337b8ea0c866b9c15673b67ff47219d34de2cd28f7fd60af9a290ce4",
+  "name": "alaska_aframe_v0",
+  "object_count": 79,
+  "production_qualified": false,
+  "reference": null,
+  "schema": "nomadic.scene-forge.asset/0.1",
+  "spec_sha256": "0d939ffc00773dd726d2b286c027f668d14ea31fbbca7e2df84b2e3ef43d1643",
+  "status": "GEOMETRY_BUILT_NOT_VISUALLY_QUALIFIED",
+  "triangles": 926
+}

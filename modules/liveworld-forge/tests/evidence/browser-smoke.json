@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "engine": "real Edge WebGL/SwiftShader",
+  "timestamp": "2026-11-08T15:09:24.472Z",
+  "sceneRevision": 1,
+  "initial": {
+    "ready": true,
+    "rev": 0,
+    "objects": 4,
+    "context": true
+  },
+  "render": {
+    "calls": 84,
+    "triangles": 1012,
+    "webgl": true
+  },
+  "liveObjectObserved": true,
+  "capture": {
+    "schema": "nomadic.liveworld.capture/1",
+    "revision": 1,
+    "width": 736,
+    "height": 598,
+    "sha256": "7f4222f1de9b9d5f998447783fa12bc2363ace7783a67509416823f884b67701",
+    "bytes": 76576,
+    "createdAt": "2026-11-08T15:09:24.407Z",
+    "trust": "CLIENT_SUBMITTED_NOT_INDEPENDENTLY_VERIFIED"
+  },
+  "runtimeExceptions": [],
+  "externalModelsUsed": 0,
+  "scope": "ISOLATED_PROTOTYPE_NOT_STILLWATER_OR_PRODUCTION"
+}

@@ -1,0 +1,15 @@
+**/node_modules/
+**/__pycache__/
+**/*.pyc
+**/.runtime/
+**/.env
+**/.env.*
+!**/.env.example
+**/scratch/
+**/state/
+**/test-results/
+**/coverage/
+*.log
+*.zip
+Thumbs.db
+.DS_Store

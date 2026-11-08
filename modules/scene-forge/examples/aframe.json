@@ -1,0 +1,12 @@
+{
+  "schema": "nomadic.scene-forge/0.1",
+  "name": "alaska_aframe_v0",
+  "reference_image": null,
+  "cabin": {
+    "width_m": 9.0,
+    "depth_m": 11.0,
+    "wall_height_m": 3.25,
+    "ridge_height_m": 8.0,
+    "deck_depth_m": 2.8
+  }
+}

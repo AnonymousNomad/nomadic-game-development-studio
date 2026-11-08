@@ -1,0 +1,21 @@
+{
+  "type": "add",
+  "id": "example-prop",
+  "kind": "box",
+  "position": [
+    3,
+    0.7,
+    3
+  ],
+  "rotation": [
+    0,
+    0,
+    0
+  ],
+  "scale": [
+    1.4,
+    1.4,
+    1.4
+  ],
+  "color": "#d8a26c"
+}

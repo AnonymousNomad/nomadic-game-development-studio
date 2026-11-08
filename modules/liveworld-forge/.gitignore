@@ -1,0 +1,5 @@
+state/
+node_modules/
+tests/evidence/*.png
+*.tmp
+*.write

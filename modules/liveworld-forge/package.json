@@ -1,0 +1,13 @@
+{
+  "name": "nomadic-liveworld-forge",
+  "version": "0.1.0-pilot",
+  "private": true,
+  "type": "module",
+  "description": "Offline model-agnostic typed live 3D scene editing pilot",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --test tests/scene-contract.test.mjs tests/mcp-stdio.test.mjs",
+    "test:browser": "node tests/browser-smoke.mjs"
+  },
+  "dependencies": {}
+}

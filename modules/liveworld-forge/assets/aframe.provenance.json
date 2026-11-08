@@ -1,0 +1,9 @@
+{
+  "source": "C:\\NomadicLabs\\NomadicSceneForge\\demo-output\\alaska_aframe_v0.glb",
+  "source_manifest": "C:\\NomadicLabs\\NomadicSceneForge\\demo-output\\alaska_aframe_v0.manifest.json",
+  "sha256": "54aba7a5337b8ea0c866b9c15673b67ff47219d34de2cd28f7fd60af9a290ce4",
+  "geometry_kind": "deterministic_parametric_NOT_image_reconstruction",
+  "production_qualified": false,
+  "triangles": 926,
+  "object_count": 79
+}

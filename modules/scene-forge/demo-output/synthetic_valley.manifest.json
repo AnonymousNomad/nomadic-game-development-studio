@@ -1,0 +1,10 @@
+{
+  "schema": "nomadic.scene-forge.terrain/0.1",
+  "input": "synthetic_heightmap.png",
+  "input_sha256": "bc25cab37205a4009055dd1ad9e86e768b6a3604f62be8cb0abc680e06382e26",
+  "geometry": "heightmap_pixel_elevation_not_photo_reconstruction",
+  "glb_sha256": "6b2eb5c8e86dbb3d2faa985467ece83dfe9e4b61b2cc72f56fbb0742cc1f7e0d",
+  "triangles": 2048,
+  "production_qualified": false,
+  "status": "TERRAIN_BUILT_NOT_VISUALLY_QUALIFIED"
+}

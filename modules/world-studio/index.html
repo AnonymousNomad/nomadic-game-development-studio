@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Nomadic World Studio — Isolated Agent Editing Pilot</title>
+  <link rel="stylesheet" href="/style.css">
+  <script defer src="/three.min.js"></script>
+  <script defer src="/app.js"></script>
+</head>
+<body>
+  <header>
+    <div class="brand"><strong>NOMADIC</strong> <span>WORLD STUDIO</span></div>
+    <div class="small">ISOLATED • THREE.JS • NO PRODUCTION PROJECT CONNECTED</div>
+    <div id="status" role="status">STARTING LOCAL BRIDGE</div>
+  </header>
+  <main>
+    <section id="stage">
+      <div class="stage-top">
+        <strong>Live world · Scene 01</strong>
+        <span>Click to inspect · Drag to orbit · Scroll to zoom</span>
+      </div>
+      <div id="viewport" aria-label="Editable disposable 3D fixture scene"></div>
+      <div id="stats" class="stats">Initializing renderer</div>
+    </section>
+    <aside>
+      <div class="section-title">SCENE HIERARCHY</div>
+      <div id="objects" class="object-list" aria-label="Selectable objects"></div>
+      <div class="section-title">SELECTED OBJECT</div>
+      <pre id="inspector">Waiting for scene</pre>
+      <div class="section-title">AGENT CHANGE JOURNAL</div>
+      <pre id="history">No changes</pre>
+      <div class="help">
+        <strong>AI Studio workflow pilot</strong>
+        <p>A local agent can inspect the current scene and request only five typed actions:
+        <code>set_position</code>, <code>set_color</code>, <code>set_light_intensity</code>, <code>undo</code>, and <code>capture_frame</code>.
+        Every edit is temporary and reversible.</p>
+        <p>The source game, models, personal saves, and external services are not accessible from this fixture.</p>
+      </div>
+    </aside>
+  </main>
+  <footer>
+    <span>EXPERIMENTAL · Not an accepted Scene Forge or Sightline integration</span>
+    <span>Three.js local vendored runtime · Offline-only</span>
+  </footer>
+</body>
+</html>

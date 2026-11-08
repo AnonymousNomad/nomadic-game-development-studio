@@ -1,0 +1,253 @@
+{
+  "schema": "nomadic.studio.snapshot-manifest/1",
+  "files": {
+    ".gitignore": {
+      "bytes": 174,
+      "sha256": "5033970d5dcfa98cd5769c2196b7c0baa34a2f93a603d82807f9776903dfc384"
+    },
+    "modules/liveworld-forge/.gitignore": {
+      "bytes": 56,
+      "sha256": "564573aadf1e4a610b02f6f0a7966ef345697a176757c038c95ea25227379180"
+    },
+    "modules/liveworld-forge/agent-cli.mjs": {
+      "bytes": 1915,
+      "sha256": "cbbe3b57c9e3831a043dc685502a6bcf4319a1d4b65bfc2a001c26437bc27713"
+    },
+    "modules/liveworld-forge/assets/aframe.glb": {
+      "bytes": 134812,
+      "sha256": "54aba7a5337b8ea0c866b9c15673b67ff47219d34de2cd28f7fd60af9a290ce4"
+    },
+    "modules/liveworld-forge/assets/aframe.provenance.json": {
+      "bytes": 418,
+      "sha256": "b83df34e56b4337102ff9aba14d40890d23a606fb50898fe7e124b432080b3ca"
+    },
+    "modules/liveworld-forge/client.js": {
+      "bytes": 8607,
+      "sha256": "f221a7b899e216f38672cdc7d2639f7729ff5cfd9646e7e00b93a607f1557426"
+    },
+    "modules/liveworld-forge/docs/FLOW_REFERENCE_CONTINUITY.md": {
+      "bytes": 3277,
+      "sha256": "683154b963f9964727c8d8a88cf25ebd8b41b3bb940e6a8c16c9111c9def3665"
+    },
+    "modules/liveworld-forge/examples/add-prop.json": {
+      "bytes": 210,
+      "sha256": "0b2421cb948fdcbdb839f33911ffb8d75dde43ab3646e55758e674d4ca1266f1"
+    },
+    "modules/liveworld-forge/index.html": {
+      "bytes": 3818,
+      "sha256": "acc845f7eafbee24c861d4ae67906be01307fa7df392c2ad20c81439e1837bf4"
+    },
+    "modules/liveworld-forge/mcp-server.mjs": {
+      "bytes": 5457,
+      "sha256": "6b7a274e1fb9d53049ba2f365ad3d04b1df89b3f8492b7a339c6b707c31b0662"
+    },
+    "modules/liveworld-forge/package.json": {
+      "bytes": 390,
+      "sha256": "e716f1be46a3f75354370125c6177e42a75b4a07c4c6ff10524fca27af3bd2be"
+    },
+    "modules/liveworld-forge/README.md": {
+      "bytes": 4402,
+      "sha256": "f359343b51981f271185816585d65bd54e7fbf85054281d6197becc0902921d1"
+    },
+    "modules/liveworld-forge/server.mjs": {
+      "bytes": 12499,
+      "sha256": "699d3aec9c11acf2438dc75c4a32992649050bdf66cfca50e105195907e0ef3a"
+    },
+    "modules/liveworld-forge/TEST_RECEIPT.md": {
+      "bytes": 2173,
+      "sha256": "4df2ed33e5987067ac7986ff87eaca2443413fd5314db6095645d50efe1bf736"
+    },
+    "modules/liveworld-forge/tests/browser-smoke.mjs": {
+      "bytes": 7337,
+      "sha256": "e10e17c7279f5ac1fb7f3c660778b44b9a4e22d855a6964edb5febb5e853dd9c"
+    },
+    "modules/liveworld-forge/tests/evidence/browser-smoke.json": {
+      "bytes": 772,
+      "sha256": "0e075d9b7998867ecb85e60e11930ae8359b4c9cb020a2b49c1b67054c294e0b"
+    },
+    "modules/liveworld-forge/tests/evidence/scene-after-agent-edit.png": {
+      "bytes": 76576,
+      "sha256": "7f4222f1de9b9d5f998447783fa12bc2363ace7783a67509416823f884b67701"
+    },
+    "modules/liveworld-forge/tests/evidence/scene-before-agent-edit.png": {
+      "bytes": 70670,
+      "sha256": "80f95be1e6cb3da2cc05bf8401e69449e009fdab3fbb3aba4d0796e4ee5ecd0e"
+    },
+    "modules/liveworld-forge/tests/mcp-stdio.test.mjs": {
+      "bytes": 3344,
+      "sha256": "ba3a7f1ee3a2fa4bfd9f3e4396cf55eef416f3213c05daa19bdaf9e0a50d3891"
+    },
+    "modules/liveworld-forge/tests/scene-contract.test.mjs": {
+      "bytes": 5526,
+      "sha256": "392fb3eed26836f88672bc7c9c2468d17b8fe61b67f869c3a4e09d68ee6d151f"
+    },
+    "modules/liveworld-forge/THIRD_PARTY_NOTICES.md": {
+      "bytes": 1030,
+      "sha256": "7b70827edee7adca7775f430d94e8ecd6ff0adf284bcad0581bde7bd29e95e82"
+    },
+    "modules/liveworld-forge/vendor/glb_loader.js": {
+      "bytes": 9939,
+      "sha256": "c6cb3b341762f3829f70147cef0f59548e73de7404c2068d7e888ec65633f47a"
+    },
+    "modules/liveworld-forge/vendor/three.min.js": {
+      "bytes": 608313,
+      "sha256": "46e52aa6eafe21fcd5dd9827ee1333b22734c6af4b899b00fb6b2f8cfbc33df3"
+    },
+    "modules/liveworld-forge/vendor/THREE_LICENSE.txt": {
+      "bytes": 1078,
+      "sha256": "175c8080ffb13980dd247d8d8b6eb5106ad3f9df74911530e42543aaa0ad2f00"
+    },
+    "modules/scene-forge/blender_batch.py": {
+      "bytes": 1318,
+      "sha256": "548544ed6fe93af470b21d3ea9566bf81aa67f46dba2c3aa7ed57b80cb2374fd"
+    },
+    "modules/scene-forge/blender_bridge.py": {
+      "bytes": 1945,
+      "sha256": "7914cbdd6469fafe19eb72f6da59f6ebd4ee0774ed156694df5345a4ae9fcbe7"
+    },
+    "modules/scene-forge/demo-output/alaska_aframe_v0.glb": {
+      "bytes": 134812,
+      "sha256": "54aba7a5337b8ea0c866b9c15673b67ff47219d34de2cd28f7fd60af9a290ce4"
+    },
+    "modules/scene-forge/demo-output/alaska_aframe_v0.manifest.json": {
+      "bytes": 524,
+      "sha256": "6861850992397d18c7d70d086b8ddaa44cab4186812a518b35392e3a63b29db3"
+    },
+    "modules/scene-forge/demo-output/synthetic_valley.glb": {
+      "bytes": 174272,
+      "sha256": "6b2eb5c8e86dbb3d2faa985467ece83dfe9e4b61b2cc72f56fbb0742cc1f7e0d"
+    },
+    "modules/scene-forge/demo-output/synthetic_valley.manifest.json": {
+      "bytes": 432,
+      "sha256": "cc93291cadec601f2169eaad684c84fbc67781ecdde91982332baf73bdf3874e"
+    },
+    "modules/scene-forge/docs/ARCHITECTURE_AND_RESEARCH.md": {
+      "bytes": 6846,
+      "sha256": "13e9d9eafe0ba474571a43125a2053c1e5dc2fbdf07eeb241e617d6931124e18"
+    },
+    "modules/scene-forge/examples/aframe.json": {
+      "bytes": 236,
+      "sha256": "e08289b74eaa73f4b9e216254a44d8fcc5e79c1cb45d983ee0ba53edd6df7721"
+    },
+    "modules/scene-forge/examples/synthetic_heightmap.png": {
+      "bytes": 187,
+      "sha256": "bc25cab37205a4009055dd1ad9e86e768b6a3604f62be8cb0abc680e06382e26"
+    },
+    "modules/scene-forge/LICENSE": {
+      "bytes": 1082,
+      "sha256": "0df376e23c0b4e9c22f4da609424e957118ca6f187cc9ae38db64321569d0add"
+    },
+    "modules/scene-forge/mcp_server.py": {
+      "bytes": 5935,
+      "sha256": "28698e28622796a61f4ce98fff97add9477e2a462c82aac13175d73b672b4ef0"
+    },
+    "modules/scene-forge/README.md": {
+      "bytes": 6848,
+      "sha256": "828c8f3b9b3ac9a32ff5e6dfa4f11cb4cdc3b7563191a63bcb6b8935e7f57a7e"
+    },
+    "modules/scene-forge/scene_forge.py": {
+      "bytes": 17759,
+      "sha256": "f53db660f86c1a3689caaea5c35df2c8f79e8d3ae88c3a7ae83a053429f0e223"
+    },
+    "modules/scene-forge/terrain_forge.py": {
+      "bytes": 6977,
+      "sha256": "5da7c168060d009163892317d86a25ddd2d63f2f0d031a359cd690748c73ac2c"
+    },
+    "modules/scene-forge/TEST_RECEIPT.md": {
+      "bytes": 1022,
+      "sha256": "9ff5dfd2007d2a42164cff77fc5f0234f8ab7385d2ef398bb00083ed300aefae"
+    },
+    "modules/scene-forge/tests/test_scene_forge.py": {
+      "bytes": 10168,
+      "sha256": "4abee00f14ee0bf0f7402c57ab96c887c129c8e9093675cbcc3c2fff63fd4542"
+    },
+    "modules/world-studio/app.js": {
+      "bytes": 11993,
+      "sha256": "a692f57355a8db450593556685225d0f1f33d22d84e23f48404dd974de3927ba"
+    },
+    "modules/world-studio/ctl.mjs": {
+      "bytes": 2598,
+      "sha256": "4dc9afd55370379bcbe3c0d1b423c180d1e71cb662106a396459eaa6e0e9d880"
+    },
+    "modules/world-studio/index.html": {
+      "bytes": 2023,
+      "sha256": "53026b821859fd067d66d4fe7700702b1ec33592a8e592c8458ceef53ec45791"
+    },
+    "modules/world-studio/LICENSE-threejs": {
+      "bytes": 1081,
+      "sha256": "fbf3943930dacbf56aabb8dc5d816440bd16aa6f4cc78ddbdf12106ee1807832"
+    },
+    "modules/world-studio/mcp.mjs": {
+      "bytes": 5932,
+      "sha256": "4baf3ca3038afec1096dda9c5e9581fbdd201940b7bae193e4d06f784d175e42"
+    },
+    "modules/world-studio/mcp.test.mjs": {
+      "bytes": 1710,
+      "sha256": "f08879592d6498da241880df87588649959eedea62110b8528da0feeddaaba1c"
+    },
+    "modules/world-studio/package.json": {
+      "bytes": 344,
+      "sha256": "f37a75dc19093e33d7f61e4975ea86b1e55156a8c563b5bf3b50de58faa06441"
+    },
+    "modules/world-studio/protocol.mjs": {
+      "bytes": 4573,
+      "sha256": "a94fdd1610144bcf9fc88b368c98634e6747c82ce5c11f5856432d18d4382ab1"
+    },
+    "modules/world-studio/protocol.test.mjs": {
+      "bytes": 3121,
+      "sha256": "8f6efa3a8b5b866d3fcf4c4e8170925963763ed2089f9c8137fcedd85bc1c71e"
+    },
+    "modules/world-studio/README.md": {
+      "bytes": 1058,
+      "sha256": "f722f9b2db9df076b2cb781b3ea8bd59b7dbe69fc5c4dc8b83d76101c389605e"
+    },
+    "modules/world-studio/server.mjs": {
+      "bytes": 10312,
+      "sha256": "8c93a0ac2525a6165d9bf9514198f41a5e41e636df557c665ecaa4c2bdf154df"
+    },
+    "modules/world-studio/server.test.mjs": {
+      "bytes": 7730,
+      "sha256": "9a9e94f521f4a8aa090bf94161535605d8499521700b1583ff4aee77de6ea443"
+    },
+    "modules/world-studio/SKILL.md": {
+      "bytes": 4456,
+      "sha256": "5da36a0e411c997ef44ff18ff5256872fa645ac104bf05108be782531b9c43cb"
+    },
+    "modules/world-studio/START_WORLD_STUDIO.cmd": {
+      "bytes": 339,
+      "sha256": "2b9d59bc2b1368ab11d2915dafe6ac90f592fc0c1fe8f54fa194ba4bf3809e4b"
+    },
+    "modules/world-studio/style.css": {
+      "bytes": 2476,
+      "sha256": "185da24bfcb3970ea88f87e2b1789644222cc4b5458b0d2cb7bff8c02caf41f7"
+    },
+    "modules/world-studio/THIRD_PARTY_NOTICES.md": {
+      "bytes": 1004,
+      "sha256": "79318a13b209bbcfcb19137ef77fa3327d1a52e263bbc1a57ca6f991515e8b93"
+    },
+    "modules/world-studio/three.min.js": {
+      "bytes": 608313,
+      "sha256": "46e52aa6eafe21fcd5dd9827ee1333b22734c6af4b899b00fb6b2f8cfbc33df3"
+    },
+    "README.md": {
+      "bytes": 3240,
+      "sha256": "0f6eb0cc357162f8fade2207073032c63b517ba3eddb3ac8dfc7844ac49c971a"
+    },
+    "RIGHTS_AND_PROVENANCE.md": {
+      "bytes": 1238,
+      "sha256": "cc008491dc7d241fa150d35b6a206c33586d5a23372c2093d6602f564e0e8aca"
+    },
+    "RUN_TESTS.ps1": {
+      "bytes": 796,
+      "sha256": "a2751bfd92c95ec2438122e34a950c9d6b314b8a6f16c7af67ba35f5924b3cda"
+    },
+    "SECURITY.md": {
+      "bytes": 564,
+      "sha256": "4742a2907b01a1a073b749016a7fe03b75f85e0621c143bc9a0132421ee044fb"
+    },
+    "TESTING_AND_LIMITATIONS.md": {
+      "bytes": 2049,
+      "sha256": "4d8290380f60e3d492b8485594c4271b2d69ea371dea8a2919d739cd98d5ce3d"
+    }
+  }
+}

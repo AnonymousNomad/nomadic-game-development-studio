@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nomadic LiveWorld Forge — local studio pilot</title>
+<style>
+:root{color-scheme:dark;font-family:Segoe UI,Arial,sans-serif;background:#101719;color:#e7f3ed}*{box-sizing:border-box}body{margin:0}
+header{padding:16px 23px;border-bottom:1px solid #365046;display:flex;justify-content:space-between;gap:10px;align-items:center;background:#14231f}
+h1{font-size:18px;letter-spacing:.02em;margin:0}small{color:#9bafa6}.tag{border:1px solid #3e7660;border-radius:20px;padding:4px 10px;font-size:11px;color:#a5dfc5}
+main{display:grid;grid-template-columns:1fr 345px;height:calc(100vh - 70px);min-height:500px}#viewport{position:relative;min-width:0;background:#1d2d31}canvas{width:100%;height:100%;display:block}
+#overlay{position:absolute;bottom:16px;left:16px;background:#101e1ccc;padding:12px;border:1px solid #3c6556;border-radius:8px;font-size:12px}
+aside{padding:18px;overflow:auto;border-left:1px solid #355247;background:#152420}h2{font-size:14px;margin:0 0 10px}label{display:block;font-size:12px;color:#c5d8cd;margin:14px 0 5px}
+input,textarea{width:100%;background:#0b1714;border:1px solid #476358;color:#e4f1e8;padding:10px;border-radius:5px;font-family:Consolas,monospace;font-size:12px}textarea{height:143px;resize:vertical}
+button{border:1px solid #5b9d7c;border-radius:5px;background:#255b47;color:#f1fff5;padding:9px 11px;cursor:pointer;font-size:12px}button:hover{background:#30775b}
+.controls{display:flex;flex-wrap:wrap;gap:7px;margin:9px 0}pre{white-space:pre-wrap;word-wrap:break-word;font-size:11px;background:#0e1816;padding:10px;border-radius:5px;max-height:200px;overflow:auto}
+.notice{font-size:12px;line-height:1.5;color:#b7c9bf}.ok{color:#8fdeb5}.warn{color:#f1ca88}
+@media(max-width:780px){main{grid-template-columns:1fr;grid-template-rows:60vh auto;height:auto}aside{border-left:0;border-top:1px solid #345}}
+</style></head><body>
+<header><div><h1>Nomadic LiveWorld Forge</h1><small>Model-agnostic 3D world editor · local prototype</small></div><span class="tag">OFFLINE · LOOPBACK ONLY</span></header>
+<main><div id="viewport"><div id="overlay">Connecting…</div></div>
+<aside>
+<h2>Live Scene / Agent Control</h2><p class="notice">Drag to orbit. Scroll to zoom. Edit operations apply instantly to all connected viewers. No model service is required.</p>
+<label for="token">Editor token (operator-held, never saved by the page)</label><input id="token" type="password" autocomplete="off" spellcheck="false" placeholder="Paste LWF_TOKEN for authorized edits">
+<label for="command">Typed scene command (JSON)</label><textarea id="command" spellcheck="false">{"type":"transform","id":"marker","position":[4,1.4,1]}</textarea>
+<div class="controls"><button id="apply">Apply edit</button><button id="undo">Undo</button><button id="save-camera">Save camera</button><button id="capture">Record PNG evidence</button></div>
+<div class="controls"><button id="add">Preset: Add prop</button><button id="recolor">Preset: Recolor marker</button><button id="inspect">Inspect current state</button></div>
+<label>Audit / action result</label><pre id="output">Readonly scene available without authentication. All edits require an editor token.</pre>
+<p class="notice">Reference cabin is an actual GLB exported by our offline Nomadic Scene Forge. The image evidence endpoint records browser-submitted pixels and a hash; independent Sightline qualification is a separate gate.</p>
+<p class="notice warn">Pilot only. No arbitrary Python, shell commands, paid video generation, hosted inference, or mutation of STILLWATER.</p>
+</aside></main>
+<script src="/vendor/three.min.js"></script><script src="/vendor/glb_loader.js"></script><script src="/client.js"></script></body></html>
