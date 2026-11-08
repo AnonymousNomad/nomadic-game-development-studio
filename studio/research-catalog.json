@@ -1,0 +1,104 @@
+{
+  "schema": "ngds.research-adapter-catalog/1",
+  "warning": "Research only; no operational adapter is implied.",
+  "engines": [
+    {
+      "id": "threejs",
+      "license": "MIT",
+      "adapterRoute": "read scene + capture; project-scoped source transaction",
+      "url": "https://github.com/mrdoob/three.js",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "playcanvas",
+      "license": "MIT",
+      "adapterRoute": "Stage and Editor API, project version adapter",
+      "url": "https://github.com/playcanvas/stage",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "godot",
+      "license": "MIT",
+      "adapterRoute": "EditorPlugin + EditorInterface + UndoRedo",
+      "url": "https://docs.godotengine.org/en/stable/classes/class_editorinterface.html",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "unity",
+      "license": "Proprietary",
+      "adapterRoute": "UnityEditor AssetDatabase + Undo + prefabs",
+      "url": "https://docs.unity.com/en-us/engine/6000.3/script-reference/unityeditor/assetdatabase",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "unreal",
+      "license": "Proprietary",
+      "adapterRoute": "Editor Python + AssetTools + ScopedEditorTransaction",
+      "url": "https://dev.epicgames.com/documentation/en-us/unreal-engine/scripting-the-unreal-editor-using-python",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "blender",
+      "license": "GPL",
+      "adapterRoute": "Python bpy headless assets and source metadata",
+      "url": "https://docs.blender.org/api/current/",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "bevy",
+      "license": "MIT/Apache-2.0",
+      "adapterRoute": "Rust ECS/Reflect scene adapter",
+      "url": "https://github.com/bevyengine/bevy",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "fyrox",
+      "license": "MIT",
+      "adapterRoute": "Rust editor scene graph adapter",
+      "url": "https://github.com/FyroxEngine/Fyrox",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "stride",
+      "license": "MIT",
+      "adapterRoute": "C# editor/asset pipeline",
+      "url": "https://github.com/stride3d/stride",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "o3de",
+      "license": "Apache-2.0",
+      "adapterRoute": "Python editor and Asset Processor; high hardware cost",
+      "url": "https://github.com/o3de/o3de",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "armory3d",
+      "license": "zlib",
+      "adapterRoute": "Blender-integrated engine scripts",
+      "url": "https://github.com/armory3d/armory",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "upbge",
+      "license": "GPL",
+      "adapterRoute": "Blender Game Engine Python integration",
+      "url": "https://github.com/UPBGE/upbge",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "babylonjs",
+      "license": "Apache-2.0",
+      "adapterRoute": "JS scene API and serializable assets",
+      "url": "https://github.com/BabylonJS/Babylon.js",
+      "status": "RESEARCH_ONLY"
+    },
+    {
+      "id": "custom",
+      "license": "Depends",
+      "adapterRoute": "User-defined adapter handshake and qualification",
+      "url": "https://github.com/KhronosGroup/glTF",
+      "status": "RESEARCH_ONLY"
+    }
+  ]
+}

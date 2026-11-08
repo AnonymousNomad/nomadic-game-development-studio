@@ -1,13 +1,78 @@
 {
-  "schema": "nomadic.studio.snapshot-manifest/1",
+  "schema": "nomadic.studio.staged-source-manifest/1",
+  "note": "Hashes represent Git-index bytes and exclude this self-referential manifest.",
   "files": {
     ".gitignore": {
       "bytes": 174,
       "sha256": "5033970d5dcfa98cd5769c2196b7c0baa34a2f93a603d82807f9776903dfc384"
     },
+    "README.md": {
+      "bytes": 5221,
+      "sha256": "de8c5d38cb8ec58e03ea23746688ab54a7d923a139d5be3cf80b338b8cd4845d"
+    },
+    "RIGHTS_AND_PROVENANCE.md": {
+      "bytes": 1238,
+      "sha256": "cc008491dc7d241fa150d35b6a206c33586d5a23372c2093d6602f564e0e8aca"
+    },
+    "RUN_TESTS.ps1": {
+      "bytes": 1211,
+      "sha256": "7bce51400569dd7399749111e5665cb6b4cf454b5001e76d8d1962cdcd01bfff"
+    },
+    "SECURITY.md": {
+      "bytes": 564,
+      "sha256": "4742a2907b01a1a073b749016a7fe03b75f85e0621c143bc9a0132421ee044fb"
+    },
+    "TESTING_AND_LIMITATIONS.md": {
+      "bytes": 1856,
+      "sha256": "9cf85c344418c4b2fd3d284054652a7db5b78ec4b61e847cd99c7feca0a20eae"
+    },
+    "docs/ECOSYSTEM_MATRIX_20261108.csv": {
+      "bytes": 9324,
+      "sha256": "7f419a1c9c43b129437a44618115429aff27f1d4a8ed98099c8f466f30690e96"
+    },
+    "docs/EMBODIED_AGENT_WORLD_PRESENCE.md": {
+      "bytes": 7296,
+      "sha256": "268b023d5bf1b80df60b18fce5c584cfa859dcde662087824d4ed023e1e7a939"
+    },
+    "docs/ENGINE_ADAPTER_ACCEPTANCE_GATES.md": {
+      "bytes": 3604,
+      "sha256": "2d9da7adca615dc76db8d2b46710877f20815b1c477eacbef029ab5fa7d46ff8"
+    },
+    "docs/GLOBAL_OPEN_SOURCE_GAME_STUDIO_RESEARCH_20261108.md": {
+      "bytes": 16511,
+      "sha256": "92e5f1e23c647616c918aee67aa8b858e0ecfba043aed7a35bf42737c45a5480"
+    },
+    "docs/THROUGHPUT_EXPERIMENT_PROTOCOL.md": {
+      "bytes": 5423,
+      "sha256": "1e000b890fd8f460365d8ac1d21f4ac98a67eb9df9e3a161babb853a330040ea"
+    },
+    "docs/UNIVERSAL_CORE_P0_TEST_RECEIPT_20261108.md": {
+      "bytes": 2608,
+      "sha256": "ecf53aa9e7f9fea59f43aae9b2f997ef1a85f854a097be0bf2928e93f2bcccfe"
+    },
+    "docs/UNIVERSAL_STUDIO_ARCHITECTURE.md": {
+      "bytes": 10232,
+      "sha256": "83dc6486c17b03dbab90641ad15c5b8645f1ed642369f4365f6e77ae5bc08dd3"
+    },
+    "docs/WORLD_PRESENCE_P0_TEST_RECEIPT_20261108.md": {
+      "bytes": 2949,
+      "sha256": "acf2446c05f16031a78136e0c36f0335cbcc3f1850794b0bc421b63bad1c7cf9"
+    },
     "modules/liveworld-forge/.gitignore": {
       "bytes": 56,
       "sha256": "564573aadf1e4a610b02f6f0a7966ef345697a176757c038c95ea25227379180"
+    },
+    "modules/liveworld-forge/README.md": {
+      "bytes": 4402,
+      "sha256": "f359343b51981f271185816585d65bd54e7fbf85054281d6197becc0902921d1"
+    },
+    "modules/liveworld-forge/TEST_RECEIPT.md": {
+      "bytes": 2173,
+      "sha256": "4df2ed33e5987067ac7986ff87eaca2443413fd5314db6095645d50efe1bf736"
+    },
+    "modules/liveworld-forge/THIRD_PARTY_NOTICES.md": {
+      "bytes": 1030,
+      "sha256": "7b70827edee7adca7775f430d94e8ecd6ff0adf284bcad0581bde7bd29e95e82"
     },
     "modules/liveworld-forge/agent-cli.mjs": {
       "bytes": 1915,
@@ -45,17 +110,9 @@
       "bytes": 390,
       "sha256": "e716f1be46a3f75354370125c6177e42a75b4a07c4c6ff10524fca27af3bd2be"
     },
-    "modules/liveworld-forge/README.md": {
-      "bytes": 4402,
-      "sha256": "f359343b51981f271185816585d65bd54e7fbf85054281d6197becc0902921d1"
-    },
     "modules/liveworld-forge/server.mjs": {
       "bytes": 12499,
       "sha256": "699d3aec9c11acf2438dc75c4a32992649050bdf66cfca50e105195907e0ef3a"
-    },
-    "modules/liveworld-forge/TEST_RECEIPT.md": {
-      "bytes": 2173,
-      "sha256": "4df2ed33e5987067ac7986ff87eaca2443413fd5314db6095645d50efe1bf736"
     },
     "modules/liveworld-forge/tests/browser-smoke.mjs": {
       "bytes": 7337,
@@ -65,14 +122,6 @@
       "bytes": 772,
       "sha256": "0e075d9b7998867ecb85e60e11930ae8359b4c9cb020a2b49c1b67054c294e0b"
     },
-    "modules/liveworld-forge/tests/evidence/scene-after-agent-edit.png": {
-      "bytes": 76576,
-      "sha256": "7f4222f1de9b9d5f998447783fa12bc2363ace7783a67509416823f884b67701"
-    },
-    "modules/liveworld-forge/tests/evidence/scene-before-agent-edit.png": {
-      "bytes": 70670,
-      "sha256": "80f95be1e6cb3da2cc05bf8401e69449e009fdab3fbb3aba4d0796e4ee5ecd0e"
-    },
     "modules/liveworld-forge/tests/mcp-stdio.test.mjs": {
       "bytes": 3344,
       "sha256": "ba3a7f1ee3a2fa4bfd9f3e4396cf55eef416f3213c05daa19bdaf9e0a50d3891"
@@ -81,9 +130,9 @@
       "bytes": 5526,
       "sha256": "392fb3eed26836f88672bc7c9c2468d17b8fe61b67f869c3a4e09d68ee6d151f"
     },
-    "modules/liveworld-forge/THIRD_PARTY_NOTICES.md": {
-      "bytes": 1030,
-      "sha256": "7b70827edee7adca7775f430d94e8ecd6ff0adf284bcad0581bde7bd29e95e82"
+    "modules/liveworld-forge/vendor/THREE_LICENSE.txt": {
+      "bytes": 1078,
+      "sha256": "175c8080ffb13980dd247d8d8b6eb5106ad3f9df74911530e42543aaa0ad2f00"
     },
     "modules/liveworld-forge/vendor/glb_loader.js": {
       "bytes": 9939,
@@ -93,9 +142,17 @@
       "bytes": 608313,
       "sha256": "46e52aa6eafe21fcd5dd9827ee1333b22734c6af4b899b00fb6b2f8cfbc33df3"
     },
-    "modules/liveworld-forge/vendor/THREE_LICENSE.txt": {
-      "bytes": 1078,
-      "sha256": "175c8080ffb13980dd247d8d8b6eb5106ad3f9df74911530e42543aaa0ad2f00"
+    "modules/scene-forge/LICENSE": {
+      "bytes": 1082,
+      "sha256": "0df376e23c0b4e9c22f4da609424e957118ca6f187cc9ae38db64321569d0add"
+    },
+    "modules/scene-forge/README.md": {
+      "bytes": 6848,
+      "sha256": "828c8f3b9b3ac9a32ff5e6dfa4f11cb4cdc3b7563191a63bcb6b8935e7f57a7e"
+    },
+    "modules/scene-forge/TEST_RECEIPT.md": {
+      "bytes": 1022,
+      "sha256": "9ff5dfd2007d2a42164cff77fc5f0234f8ab7385d2ef398bb00083ed300aefae"
     },
     "modules/scene-forge/blender_batch.py": {
       "bytes": 1318,
@@ -133,17 +190,9 @@
       "bytes": 187,
       "sha256": "bc25cab37205a4009055dd1ad9e86e768b6a3604f62be8cb0abc680e06382e26"
     },
-    "modules/scene-forge/LICENSE": {
-      "bytes": 1082,
-      "sha256": "0df376e23c0b4e9c22f4da609424e957118ca6f187cc9ae38db64321569d0add"
-    },
     "modules/scene-forge/mcp_server.py": {
       "bytes": 5935,
       "sha256": "28698e28622796a61f4ce98fff97add9477e2a462c82aac13175d73b672b4ef0"
-    },
-    "modules/scene-forge/README.md": {
-      "bytes": 6848,
-      "sha256": "828c8f3b9b3ac9a32ff5e6dfa4f11cb4cdc3b7563191a63bcb6b8935e7f57a7e"
     },
     "modules/scene-forge/scene_forge.py": {
       "bytes": 17759,
@@ -153,13 +202,29 @@
       "bytes": 6977,
       "sha256": "5da7c168060d009163892317d86a25ddd2d63f2f0d031a359cd690748c73ac2c"
     },
-    "modules/scene-forge/TEST_RECEIPT.md": {
-      "bytes": 1022,
-      "sha256": "9ff5dfd2007d2a42164cff77fc5f0234f8ab7385d2ef398bb00083ed300aefae"
-    },
     "modules/scene-forge/tests/test_scene_forge.py": {
       "bytes": 10168,
       "sha256": "4abee00f14ee0bf0f7402c57ab96c887c129c8e9093675cbcc3c2fff63fd4542"
+    },
+    "modules/world-studio/LICENSE-threejs": {
+      "bytes": 1081,
+      "sha256": "fbf3943930dacbf56aabb8dc5d816440bd16aa6f4cc78ddbdf12106ee1807832"
+    },
+    "modules/world-studio/README.md": {
+      "bytes": 1058,
+      "sha256": "f722f9b2db9df076b2cb781b3ea8bd59b7dbe69fc5c4dc8b83d76101c389605e"
+    },
+    "modules/world-studio/SKILL.md": {
+      "bytes": 4456,
+      "sha256": "5da36a0e411c997ef44ff18ff5256872fa645ac104bf05108be782531b9c43cb"
+    },
+    "modules/world-studio/START_WORLD_STUDIO.cmd": {
+      "bytes": 324,
+      "sha256": "76433984e7b20c3eb82890105c7e116532eab6f33f7e78975cf8f945a292d09d"
+    },
+    "modules/world-studio/THIRD_PARTY_NOTICES.md": {
+      "bytes": 1004,
+      "sha256": "79318a13b209bbcfcb19137ef77fa3327d1a52e263bbc1a57ca6f991515e8b93"
     },
     "modules/world-studio/app.js": {
       "bytes": 11993,
@@ -172,10 +237,6 @@
     "modules/world-studio/index.html": {
       "bytes": 2023,
       "sha256": "53026b821859fd067d66d4fe7700702b1ec33592a8e592c8458ceef53ec45791"
-    },
-    "modules/world-studio/LICENSE-threejs": {
-      "bytes": 1081,
-      "sha256": "fbf3943930dacbf56aabb8dc5d816440bd16aa6f4cc78ddbdf12106ee1807832"
     },
     "modules/world-studio/mcp.mjs": {
       "bytes": 5932,
@@ -197,10 +258,6 @@
       "bytes": 3121,
       "sha256": "8f6efa3a8b5b866d3fcf4c4e8170925963763ed2089f9c8137fcedd85bc1c71e"
     },
-    "modules/world-studio/README.md": {
-      "bytes": 1058,
-      "sha256": "f722f9b2db9df076b2cb781b3ea8bd59b7dbe69fc5c4dc8b83d76101c389605e"
-    },
     "modules/world-studio/server.mjs": {
       "bytes": 10312,
       "sha256": "8c93a0ac2525a6165d9bf9514198f41a5e41e636df557c665ecaa4c2bdf154df"
@@ -209,45 +266,41 @@
       "bytes": 7730,
       "sha256": "9a9e94f521f4a8aa090bf94161535605d8499521700b1583ff4aee77de6ea443"
     },
-    "modules/world-studio/SKILL.md": {
-      "bytes": 4456,
-      "sha256": "5da36a0e411c997ef44ff18ff5256872fa645ac104bf05108be782531b9c43cb"
-    },
-    "modules/world-studio/START_WORLD_STUDIO.cmd": {
-      "bytes": 339,
-      "sha256": "2b9d59bc2b1368ab11d2915dafe6ac90f592fc0c1fe8f54fa194ba4bf3809e4b"
-    },
     "modules/world-studio/style.css": {
       "bytes": 2476,
       "sha256": "185da24bfcb3970ea88f87e2b1789644222cc4b5458b0d2cb7bff8c02caf41f7"
-    },
-    "modules/world-studio/THIRD_PARTY_NOTICES.md": {
-      "bytes": 1004,
-      "sha256": "79318a13b209bbcfcb19137ef77fa3327d1a52e263bbc1a57ca6f991515e8b93"
     },
     "modules/world-studio/three.min.js": {
       "bytes": 608313,
       "sha256": "46e52aa6eafe21fcd5dd9827ee1333b22734c6af4b899b00fb6b2f8cfbc33df3"
     },
-    "README.md": {
-      "bytes": 3240,
-      "sha256": "0f6eb0cc357162f8fade2207073032c63b517ba3eddb3ac8dfc7844ac49c971a"
+    "studio/adapters/liveworld-presence.mjs": {
+      "bytes": 2333,
+      "sha256": "49ce06db30c6a3196932ccc0d40cf1b367850da351252a7ed4a979a06822641e"
     },
-    "RIGHTS_AND_PROVENANCE.md": {
-      "bytes": 1238,
-      "sha256": "cc008491dc7d241fa150d35b6a206c33586d5a23372c2093d6602f564e0e8aca"
+    "studio/cli.mjs": {
+      "bytes": 826,
+      "sha256": "181479099b4eb0655a411cb68dad2db3e3227096f2c9d14be9978dc3c6c22e4f"
     },
-    "RUN_TESTS.ps1": {
-      "bytes": 796,
-      "sha256": "a2751bfd92c95ec2438122e34a950c9d6b314b8a6f16c7af67ba35f5924b3cda"
+    "studio/presence-core.mjs": {
+      "bytes": 6713,
+      "sha256": "88f3e1bb46e067ef3bfbb30c4c70b1ab072070165085d97e4c3198634abe4e80"
     },
-    "SECURITY.md": {
-      "bytes": 564,
-      "sha256": "4742a2907b01a1a073b749016a7fe03b75f85e0621c143bc9a0132421ee044fb"
+    "studio/research-catalog.json": {
+      "bytes": 3269,
+      "sha256": "df6e13636d2774bb8932c26a34ae60d840eb37f6dd1cb8d5c6c1520d2eca100b"
     },
-    "TESTING_AND_LIMITATIONS.md": {
-      "bytes": 2049,
-      "sha256": "4d8290380f60e3d492b8485594c4271b2d69ea371dea8a2919d739cd98d5ce3d"
+    "studio/tests/presence.test.mjs": {
+      "bytes": 8111,
+      "sha256": "400d151dd6680437cc4dff2132f8e22961277f8e92c1469dec2f8ad299ba6b40"
+    },
+    "studio/tests/universal-core.test.mjs": {
+      "bytes": 5369,
+      "sha256": "6d3d3478daa7d2f2957e660370b22c04293705866c07c3523fd8a3c0c9e28493"
+    },
+    "studio/universal-core.mjs": {
+      "bytes": 5192,
+      "sha256": "81c5b345bd63acb9eb32171881e882ae45e589261b0b4d1e3d6e0ebf8d127e1d"
     }
   }
 }

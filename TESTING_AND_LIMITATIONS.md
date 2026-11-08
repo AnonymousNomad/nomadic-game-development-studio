@@ -1,17 +1,21 @@
 # Evidence and limitations
 
-**Historically reported, not a new release qualification.** Original internal receipts remain with their separate development projects.
+**Historically reported tests, not a certified universal production release.**
 
-- World Studio: 19/19 packaging/protocol checks previously reported (2026-11-07); native GPU browser manipulation and production project adapters NOT VERIFIED. This repository has its own copied source.
-- LiveWorld Forge 0.2.0: previous isolated qualification reported 10/10 contract tests, 17/17 end-to-end agent workflow checks, 47 refused adversarial inputs and an external pixel comparison in real Edge **software rendering (SwiftShader)**. A separate local Qwen-family model piloted two neutral transports. No native GTX 1060 performance acceptance or complete studio integration.
-- Scene Forge: 21/21 Python stdlib tests and independent GLB parsing were reported; generated geometry is blockout-to-midpoly, not photoreal and no Blender integration was production qualified.
-- Even if all source tests pass on another machine, that does **not** qualify actual GPU output, secure installation, or use on a real project.
-- Sightline cross-engine visual verification, Graphics Qualification Lab, proprietary game projects, research clones, provider plugins, model weights, and Blender/Unity/Godot adapters are intentionally **not included**. Their sources and legal/security qualifications are separate.
+- World Studio protocol/MCP checks: 13 tests pass.
+- LiveWorld Forge contract/MCP checks: 10 tests pass.
+- Scene Forge: 20 tests pass, 1 optional independent trimesh-parser test skipped (not installed).
+- Universal Core: 21 pure source-level tests pass; no native engine adapter connected.
+- World Presence: 14 fixture tests pass, including temporary authenticated loopback HTTP camera movement/undo, scene-revision-bound client PNG evidence, and false provenance rejection.
+- **Grand total on 2026-11-08: 78 pass, 0 fail, 1 skipped** under Resource Admission LIGHT. See docs/WORLD_PRESENCE_P0_TEST_RECEIPT_20261108.md.
 
-## Scope
+These are source/fixture functional tests. **No native GPU, real AI vision, game engine adapter, independent graphics QA, or game-building throughput improvement was verified in this release.**
 
-This is an experimental source bundle for friend feedback, not a game distribution, installer or service. The three demos do not automatically interoperate. Before production use: explicit authorization and resource limits, visual pixel comparisons against real references, independent rollback checks, exact per-project permissions and standalone target-hardware GPU profiling.
+## Separate projects and what was deliberately omitted
+- Sightline: separately developed visual QA tooling, not installed in this public preview.
+- STILLWATER and all other games: excluded; no private game assets, saves, model weights, screenshots or scripts.
+- AI Three.js Studio, Pascal Editor, Three.js DevTools MCP: third-party research projects, not copied as dependencies; consult their original repositories and licensing.
+- Browser Graphics Qualification Lab and Covert Creation Studio: independent tools not bundled here.
 
-## Security
-
-Loopback-only, no public network exposure. Do not paste tokens into GitHub Issues or screenshot a console showing secrets. Run only on your own machine and disposable data. Never connect a pilot to actual game data before separately qualifying its security and persistence.
+## Safety
+These demos assume local trusted users and disposable fixtures. Never expose ports, grant all filesystem permissions, paste session tokens into GitHub issues or connect to private projects without independent qualification and backups. A self-reported screenshot is not a GPU-attested render. The studio's core only recommends operations; it does not grant Authority or Resource Admission.

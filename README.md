@@ -4,6 +4,25 @@
 
 An experimental, local-first toolkit for working with 3D game scenes, agents, meshes and visual verification. This repository contains **real source code and tests**, not a finished engine, commercial editor, or AI model.
 
+## Universal game-engine direction (November 2026)
+
+**The studio's core is engine-agnostic.** Games keep their original engines: Three.js, Unity, Unreal, Godot, Bevy, Blender-based pipelines, or custom runtimes. Each engine must provide an independently qualified adapter before we claim operational support. The new `studio/universal-core.mjs` is a **read-only, fail-closed adapter planning contract**, not a functioning cross-engine installer or an engine integration.
+
+- [Engine-neutral architecture and phased acceptance gates](docs/UNIVERSAL_STUDIO_ARCHITECTURE.md)
+- [Global open-source research and competitive analysis](docs/GLOBAL_OPEN_SOURCE_GAME_STUDIO_RESEARCH_20261108.md)
+- [43-entry researched ecosystem matrix](docs/ECOSYSTEM_MATRIX_20261108.csv)
+- [Native editor adapter acceptance gates](docs/ENGINE_ADAPTER_ACCEPTANCE_GATES.md)
+- Run `node studio/cli.mjs catalog` to see research candidates (all UNQUALIFIED); run `node --test studio/tests/universal-core.test.mjs` for pure contract checks.
+
+## Embodied AI World Presence — the central graphics workflow
+
+The long-term goal is an AI agent that can **enter a running game's world as a spectator, move its own camera, inspect genuine pixels and objects, playtest like a player, diagnose visual defects and verify source edits**—across engines through qualified native adapters. This is distinct from a purely textual chatbot or code-generation wrapper.
+
+- [World Presence architecture, research and gated milestones](docs/EMBODIED_AGENT_WORLD_PRESENCE.md)
+- [Pre-registered A/B throughput benchmark](docs/THROUGHPUT_EXPERIMENT_PROTOCOL.md)
+- Experimental CPU-tested fixture implementation: studio/presence-core.mjs and studio/adapters/liveworld-presence.mjs.
+- **No live model vision, real native GPU acceptance or development throughput improvement has yet been verified.** Camera operations only target the isolated LiveWorld Forge test fixture and are not installed into STILLWATER or other game projects.
+
 ## Three standalone working modules
 
 | Module | What it does | Status |
