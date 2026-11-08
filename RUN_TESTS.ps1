@@ -11,4 +11,6 @@ Push-Location (Join-Path $root 'studio')
 try { & node --test tests/universal-core.test.mjs; if($LASTEXITCODE -ne 0){throw 'Universal core tests failed'} } finally { Pop-Location }
 Push-Location (Join-Path $root 'studio')
 try { & node --test tests/presence.test.mjs; if($LASTEXITCODE -ne 0){throw 'Presence fixture tests failed'} } finally { Pop-Location }
-Write-Host 'Source and fixture tests complete. No native GPU, vision model or engine integration claims.'
+Push-Location (Join-Path $root 'studio/vision')
+try { & node --test minimax-review-contract.test.mjs; if($LASTEXITCODE -ne 0){throw 'MiniMax vision triage contract tests failed'} } finally { Pop-Location }
+Write-Host 'Source and fixture tests complete. No native GPU, actual MiniMax vision call or engine integration claims.'

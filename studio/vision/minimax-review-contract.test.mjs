@@ -1,0 +1,28 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {validateVisionTriage,makeVisionTask,VISION_SCHEMA} from './minimax-review-contract.mjs';
+const H='a'.repeat(64),G='b'.repeat(64);
+const obs=()=>({imageSha256:H,sceneRevision:3,width:1280,height:720,verifiedNative:false});
+const objs=()=>[{id:'cabin-1'},{id:'spruce_2'}];
+const issue=()=>({code:'MATERIAL_PBR',observation:'Material has missing surface roughness.',hypothesis:'Check the roughness map in source.',confidence:0.7,region:[0.1,0.2,0.4,0.6],objectId:'cabin-1'});
+const rep=()=>({schema:VISION_SCHEMA,frameSha256:H,sceneRevision:3,width:1280,height:720,modelName:'MiniMax-M3.1-Flash',defects:[issue()]});
+const check=(r=rep(),o=obs(),s=objs())=>validateVisionTriage({report:r,observation:o,sceneObjects:s});
+test('one structured defect passes only as unverified triage',()=>{
+ const r=check();assert.equal(r.ok,true);assert.equal(r.status,'TRIAGE_ONLY');assert.equal(r.requiresIndependentPixelReview,true);assert.equal(r.requiresNativeCaptureQualification,true);
+});
+test('zero defects valid: uncertainty may be more honest than hallucinated issue',()=>{const r=rep();r.defects=[];assert.equal(check(r).ok,true)});
+test('wrong frame hash fails',()=>{const r=rep();r.frameSha256=G;assert.ok(check(r).reasonCodes.includes('FRAME_MISMATCH'))});
+test('stale scene revision fails',()=>{const r=rep();r.sceneRevision=2;assert.ok(check(r).reasonCodes.includes('SCENE_REVISION_MISMATCH'))});
+test('wrong viewport fails',()=>{const r=rep();r.width=1920;assert.ok(check(r).reasonCodes.includes('VIEWPORT_MISMATCH'))});
+test('unknown object id fails',()=>{const r=rep();r.defects[0].objectId='imaginary_item';assert.ok(check(r).reasonCodes.includes('INVALID_DEFECT_0'))});
+test('unsafe source-action category fails',()=>{const r=rep();r.defects[0].code='EXECUTE_CODE';assert.ok(check(r).reasonCodes.includes('INVALID_DEFECT_0'))});
+test('invalid confidence fails',()=>{const r=rep();r.defects[0].confidence=1.7;assert.ok(check(r).reasonCodes.includes('INVALID_DEFECT_0'))});
+test('invalid region out of range fails',()=>{const r=rep();r.defects[0].region=[0,0,1,Infinity];assert.ok(check(r).reasonCodes.includes('INVALID_DEFECT_0'))});
+test('degenerate box fails',()=>{const r=rep();r.defects[0].region=[0.5,0.5,0.5,0.5];assert.ok(check(r).reasonCodes.includes('INVALID_DEFECT_0'))});
+test('length-bound evidence notes and count',()=>{const r=rep();r.defects[0].hypothesis='x'.repeat(301);assert.equal(check(r).ok,false);r.defects=Array(13).fill(issue());assert.ok(check(r).reasonCodes.includes('INVALID_DEFECTS'))});
+test('model self-proclaimed acceptance denied',()=>{const r=rep();r.claimsVisualAcceptance=true;assert.ok(check(r).reasonCodes.includes('MODEL_CANNOT_SELF_ACCEPT'))});
+test('requests to execute code denied',()=>{const r=rep();r.requestsCodeExecution=true;assert.ok(check(r).reasonCodes.includes('UNTRUSTED_EXECUTION_REQUEST'))});
+test('invalid observation fails before model report',()=>{const o=obs();o.imageSha256='garbage';assert.ok(check(rep(),o).reasonCodes.includes('INVALID_OBSERVATION'))});
+test('valid synthetic report does not become native GPU evidence',()=>{const o=obs();o.verifiedNative=true;const r=check(rep(),o);assert.equal(r.requiresNativeCaptureQualification,false);assert.equal(r.status,'TRIAGE_ONLY')});
+test('task prompt has real digest, known objects, and abstain rule',()=>{const s=makeVisionTask({observation:obs(),sceneObjects:objs(),referenceDescription:'Original photographic Alaska forestry scene.'});assert.match(s,/attached/);assert.match(s,/empty defects array/);assert.ok(s.includes(H));assert.ok(s.includes('spruce_2'))});
+test('task prompt refuses unsupported evidence',()=>assert.throws(()=>makeVisionTask({observation:{...obs(),imageSha256:'wat'},sceneObjects:objs()}),/INVALID_OBSERVATION/));

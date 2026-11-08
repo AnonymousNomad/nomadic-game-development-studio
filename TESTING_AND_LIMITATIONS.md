@@ -7,9 +7,10 @@
 - Scene Forge: 20 tests pass, 1 optional independent trimesh-parser test skipped (not installed).
 - Universal Core: 21 pure source-level tests pass; no native engine adapter connected.
 - World Presence: 14 fixture tests pass, including temporary authenticated loopback HTTP camera movement/undo, scene-revision-bound client PNG evidence, and false provenance rejection.
-- **Grand total on 2026-11-08: 78 pass, 0 fail, 1 skipped** under Resource Admission LIGHT. See docs/WORLD_PRESENCE_P0_TEST_RECEIPT_20261108.md.
+- MiniMax Vision triage contract: 17 tests passed, including stale frames, fabricated object IDs, scene revisions, malformed bounding boxes and model self-acceptance refusals.
+- **Current grand total on 2026-11-08: 95 pass, 0 fail, 1 skipped** under Resource Admission LIGHT. See docs/WORLD_PRESENCE_P0_TEST_RECEIPT_20261108.md for the earlier P0 baseline and docs/MINIMAX_VISION_CONTRACT_TEST_RECEIPT_20261108.md for the new gate.
 
-These are source/fixture functional tests. **No native GPU, real AI vision, game engine adapter, independent graphics QA, or game-building throughput improvement was verified in this release.**
+These are source/fixture functional tests. **No native GPU, real MiniMax model visual input, independently reviewed graphics fix, production game engine adapter, or development throughput improvement was verified in this release.**
 
 ## Separate projects and what was deliberately omitted
 - Sightline: separately developed visual QA tooling, not installed in this public preview.

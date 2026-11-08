@@ -7,24 +7,24 @@
       "sha256": "5033970d5dcfa98cd5769c2196b7c0baa34a2f93a603d82807f9776903dfc384"
     },
     "README.md": {
-      "bytes": 5221,
-      "sha256": "de8c5d38cb8ec58e03ea23746688ab54a7d923a139d5be3cf80b338b8cd4845d"
+      "bytes": 5343,
+      "sha256": "82afb6c1d3a1572cc41454882928d155b50bf63b801af2bf3a67943219540600"
     },
     "RIGHTS_AND_PROVENANCE.md": {
       "bytes": 1238,
       "sha256": "cc008491dc7d241fa150d35b6a206c33586d5a23372c2093d6602f564e0e8aca"
     },
     "RUN_TESTS.ps1": {
-      "bytes": 1211,
-      "sha256": "7bce51400569dd7399749111e5665cb6b4cf454b5001e76d8d1962cdcd01bfff"
+      "bytes": 1431,
+      "sha256": "c90f5b0d799d92c06ca592a15e3595e1c41b139ec8d7277d14ed542f69b4cf9d"
     },
     "SECURITY.md": {
       "bytes": 564,
       "sha256": "4742a2907b01a1a073b749016a7fe03b75f85e0621c143bc9a0132421ee044fb"
     },
     "TESTING_AND_LIMITATIONS.md": {
-      "bytes": 1856,
-      "sha256": "9cf85c344418c4b2fd3d284054652a7db5b78ec4b61e847cd99c7feca0a20eae"
+      "bytes": 2181,
+      "sha256": "061f96f872fb82b53130f9abde66ac9447b31b5344202e2697c9e301f398251d"
     },
     "docs/ECOSYSTEM_MATRIX_20261108.csv": {
       "bytes": 9324,
@@ -41,6 +41,14 @@
     "docs/GLOBAL_OPEN_SOURCE_GAME_STUDIO_RESEARCH_20261108.md": {
       "bytes": 16511,
       "sha256": "92e5f1e23c647616c918aee67aa8b858e0ecfba043aed7a35bf42737c45a5480"
+    },
+    "docs/MINIMAX_VISION_CONTRACT_TEST_RECEIPT_20261108.md": {
+      "bytes": 2463,
+      "sha256": "a426f005424b49092f909d6d7fa2d6fa5764b297c24c9bd7b28b79c9839775f7"
+    },
+    "docs/MINIMAX_VISION_P1_HANDOFF_20261108.md": {
+      "bytes": 5691,
+      "sha256": "0d32b1d3523b273132379904c0ca60fb2dfab3bbd77a04d937e7ae481a6fbb60"
     },
     "docs/THROUGHPUT_EXPERIMENT_PROTOCOL.md": {
       "bytes": 5423,
@@ -301,6 +309,14 @@
     "studio/universal-core.mjs": {
       "bytes": 5192,
       "sha256": "81c5b345bd63acb9eb32171881e882ae45e589261b0b4d1e3d6e0ebf8d127e1d"
+    },
+    "studio/vision/minimax-review-contract.mjs": {
+      "bytes": 5103,
+      "sha256": "6c38b70c6c01eded89fc59df0b8c730461c260b5cffa403535cbec03ec68276c"
+    },
+    "studio/vision/minimax-review-contract.test.mjs": {
+      "bytes": 3827,
+      "sha256": "ea35aad08904b745d5e80daa143c1ca9746e1c7b61963fc614c661adc4be7a36"
     }
   }
 }

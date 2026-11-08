@@ -19,6 +19,7 @@ An experimental, local-first toolkit for working with 3D game scenes, agents, me
 The long-term goal is an AI agent that can **enter a running game's world as a spectator, move its own camera, inspect genuine pixels and objects, playtest like a player, diagnose visual defects and verify source edits**—across engines through qualified native adapters. This is distinct from a purely textual chatbot or code-generation wrapper.
 
 - [World Presence architecture, research and gated milestones](docs/EMBODIED_AGENT_WORLD_PRESENCE.md)
+- [MiniMax vision P1 test handoff: actual image input and native frame pilot](docs/MINIMAX_VISION_P1_HANDOFF_20261108.md)
 - [Pre-registered A/B throughput benchmark](docs/THROUGHPUT_EXPERIMENT_PROTOCOL.md)
 - Experimental CPU-tested fixture implementation: studio/presence-core.mjs and studio/adapters/liveworld-presence.mjs.
 - **No live model vision, real native GPU acceptance or development throughput improvement has yet been verified.** Camera operations only target the isolated LiveWorld Forge test fixture and are not installed into STILLWATER or other game projects.
