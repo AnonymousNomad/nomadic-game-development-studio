@@ -7,8 +7,8 @@
       "sha256": "5033970d5dcfa98cd5769c2196b7c0baa34a2f93a603d82807f9776903dfc384"
     },
     "README.md": {
-      "bytes": 5343,
-      "sha256": "82afb6c1d3a1572cc41454882928d155b50bf63b801af2bf3a67943219540600"
+      "bytes": 5835,
+      "sha256": "25565111701167711f0b3a74a2728c9e6189fe69cdab9369d5a469c6cbd708f1"
     },
     "RIGHTS_AND_PROVENANCE.md": {
       "bytes": 1238,
@@ -50,6 +50,10 @@
       "bytes": 5691,
       "sha256": "0d32b1d3523b273132379904c0ca60fb2dfab3bbd77a04d937e7ae481a6fbb60"
     },
+    "docs/NGDS_VISION_P1_INDEPENDENT_REVIEW_20261108.md": {
+      "bytes": 5908,
+      "sha256": "ea73acd291fcd87710b6dabef22aabc4236deba539c7bf8f112c32a4c324344b"
+    },
     "docs/THROUGHPUT_EXPERIMENT_PROTOCOL.md": {
       "bytes": 5423,
       "sha256": "1e000b890fd8f460365d8ac1d21f4ac98a67eb9df9e3a161babb853a330040ea"
@@ -61,6 +65,10 @@
     "docs/UNIVERSAL_STUDIO_ARCHITECTURE.md": {
       "bytes": 10232,
       "sha256": "83dc6486c17b03dbab90641ad15c5b8645f1ed642369f4365f6e77ae5bc08dd3"
+    },
+    "docs/VERIFICATION_AND_RELEASE_POLICY.md": {
+      "bytes": 3378,
+      "sha256": "f854576ab1afe42262af18590029b33c62db5ed34d96fa65274faceed21cb0fb"
     },
     "docs/WORLD_PRESENCE_P0_TEST_RECEIPT_20261108.md": {
       "bytes": 2949,

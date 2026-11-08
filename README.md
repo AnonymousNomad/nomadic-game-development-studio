@@ -20,9 +20,11 @@ The long-term goal is an AI agent that can **enter a running game's world as a s
 
 - [World Presence architecture, research and gated milestones](docs/EMBODIED_AGENT_WORLD_PRESENCE.md)
 - [MiniMax vision P1 test handoff: actual image input and native frame pilot](docs/MINIMAX_VISION_P1_HANDOFF_20261108.md)
+- [P1 isolated-fixture test and independent evidence review (November 8, 2026)](docs/NGDS_VISION_P1_INDEPENDENT_REVIEW_20261108.md)
+- [Evidence requirements for future public repo updates](docs/VERIFICATION_AND_RELEASE_POLICY.md)
 - [Pre-registered A/B throughput benchmark](docs/THROUGHPUT_EXPERIMENT_PROTOCOL.md)
 - Experimental CPU-tested fixture implementation: studio/presence-core.mjs and studio/adapters/liveworld-presence.mjs.
-- **No live model vision, real native GPU acceptance or development throughput improvement has yet been verified.** Camera operations only target the isolated LiveWorld Forge test fixture and are not installed into STILLWATER or other game projects.
+- **P1 isolated fixture observation:** MiniMax's three-view model interpretation is worker-reported with independently reviewed frame hashes, IoU scores, native ANGLE/NVIDIA renderer corroboration and exact undo pixels. The public package does **not** yet include a production MiniMax live-vision integration or a trusted GPU capture attestation. Development throughput and real-game graphical quality improvement remain **unmeasured**. No camera tool is installed into STILLWATER or other active game projects.
 
 ## Three standalone working modules
 
